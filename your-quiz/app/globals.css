@@ -1,0 +1,58 @@
+:root {
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-warning: #ffc107;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-gradient:/ linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+/* $mynewcolor:#fd7e14; */
+
+.btn-primary {
+
+  color: var(--bs-white);
+  background-color: var(--bs-orange);
+  border-color: var(--bs-orange);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
+
+h1 {
+  color: var(--bs-orange);
+  margin-bottom: 2%;
+}
+
+.btn-primary:hover {
+  background-color: var(--bs-red);
+  border-color: var(--bs-red);
+  /* border-color: New border color when hovering */;
+  /* Optionally, you can change other properties when hovering */
+}
+
+
+.mt-100 {
+  margin-top: 100 ;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #f2f2f2;
+}
+
+
+    .bottom-align {
+        align-self: flex-end; /* This aligns the element to the bottom */
+    }
