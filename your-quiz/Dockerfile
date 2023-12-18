@@ -13,3 +13,4 @@ RUN npm install
 
 # Define the entry point for the container
 CMD ["npm", "start"]
+ENV NODE_ENV production
