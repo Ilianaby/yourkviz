@@ -1,6 +1,5 @@
-bashCopy code
 # Use the official Node.js image as the base image
-FROM node:16-alpine
+FROM node:18
 
 # Set the working directory in the container
 WORKDIR /app
@@ -10,8 +9,13 @@ COPY . /app
 
 # Install the application dependencies
 RUN npm install
-# RUN npm install
+
+# Build the React application
+RUN npm run build
+
+# Expose port 3000
+EXPOSE 3000
 
 # Define the entry point for the container
-CMD ["npm", "run", "dev"]
+CMD ["npm", "start"]
 ENV NODE_ENV production
