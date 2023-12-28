@@ -1,6 +1,10 @@
 import InputTeamName from '../components/InputTeamName'
-import Parse from 'parse/dist/parse.min.js';
+// import Parse from 'parse/dist/parse.min.js';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import Parse from 'parse/react-native';
 
+//Before using the SDK...
+Parse.setAsyncStorage(AsyncStorage);
 const HomePage = () => {
   var Parse = require('parse/node');
 
@@ -14,7 +18,6 @@ const HomePage = () => {
   <InputTeamName/>
   {/* </> */}
   </>
-    
   );
 };
 export default HomePage;

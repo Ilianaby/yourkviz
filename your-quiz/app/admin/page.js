@@ -2,8 +2,8 @@ import TeamNames from '../../components/adminTeams'
 
 const HomePage = () => {
 
-
   return (
+
   <>
   <TeamNames/>
   {/* </> */}
