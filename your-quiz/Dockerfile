@@ -5,17 +5,19 @@ FROM node:18
 WORKDIR /app
 
 # Copy the application files into the working directory
-COPY . /app
+COPY package*.json ./app
 
 # Install the application dependencies
 RUN npm install
 
-# Build the React application
+# Copy the rest of the application files to the working directory
+COPY . .
+
+# Build the Next.js application
 RUN npm run build
 
-# Expose port 3000
+# Expose the port that your Next.js app will run on
 EXPOSE 3000
 
-# Define the entry point for the container
+# Define the command to start your Next.js app
 CMD ["npm", "start"]
-ENV NODE_ENV production
